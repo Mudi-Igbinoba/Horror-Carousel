@@ -1,0 +1,138 @@
+html,
+body {
+    margin: 0;
+}
+
+body {
+    background: url('images/bg.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 20%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-family: 'Creepster', cursive;
+    color: #790704;
+    text-align: center;
+    font-size: 50px;
+}
+
+h3 {
+    font-family: 'Creepster', cursive;
+    color: #ed2122;
+    font-size: 30px;
+}
+
+#carousel {
+    max-width: 600px;
+    position: relative;
+    margin: 0 auto;
+}
+
+#carousel .carousel-item,
+#carousel .carousel-item-hidden {
+    display: none;
+    background: transparent;
+    height: 300px;
+}
+
+#carousel .carousel-item-visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+}
+
+#carousel .carousel-item img {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#carousel .carousel-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#carousel .carousel-actions button {
+    border-radius: 50px;
+    background-color: #790704;
+    color: #fff;
+    border: 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+#carousel .carousel-actions button#carousel-button-prev {
+    margin-left: 20px;
+}
+
+#carousel .carousel-actions button#carousel-button-next {
+    margin-right: 20px;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    /* z-index: 1000; */
+}
+
+.carousel:hover {
+    display: none;
+}
+
+.carousel-caption h3,
+.carousel-caption p {
+    margin-bottom: 0;
+    transform: translateY(-10%);
+}
+
+.carousel-nav {
+    position: absolute;
+    display: flex;
+    top: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.slide-nav {
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50px;
+    margin: 0 2.5px;
+    cursor: pointer;
+}
+
+.slide-nav:hover,
+.active {
+    background: rgba(255, 255, 255);
+}
+
+.carousel-title {
+    font-size: 26px;
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
