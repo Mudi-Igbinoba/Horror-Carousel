@@ -28,7 +28,8 @@ Users should be able to:
 
 ### Screenshot
 
-![horror slides](https://user-images.githubusercontent.com/65790714/177410345-964abe07-f886-4a59-929a-8e57d59781ca.png)
+![download](https://user-images.githubusercontent.com/65790714/186096060-9137fa83-f4d9-4f3b-8e9e-5373dbcc5981.jpg)
+
 
 ### Links
 -   Solution URL: [https://github.com/Mudi-Igbinoba/Horror-Carousel/](https://github.com/Mudi-Igbinoba/Horror-Carousel/)
